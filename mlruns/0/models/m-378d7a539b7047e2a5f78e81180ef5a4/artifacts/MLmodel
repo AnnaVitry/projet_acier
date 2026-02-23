@@ -1,0 +1,36 @@
+artifact_path: "/home/anna/Documents/Alternance F\xE9vrier 2026/projet_acier/mlruns/0/models/m-378d7a539b7047e2a5f78e81180ef5a4/artifacts"
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.0
+model_id: m-378d7a539b7047e2a5f78e81180ef5a4
+model_size_bytes: 3355
+model_uuid: m-378d7a539b7047e2a5f78e81180ef5a4
+prompts: null
+run_id: b509c5bc4d4648a7befef180ba564103
+signature:
+  inputs: '[{"type": "double", "name": "Lagging_Current_Reactive.Power_kVarh", "required":
+    true}, {"type": "double", "name": "Leading_Current_Reactive_Power_kVarh", "required":
+    true}, {"type": "double", "name": "CO2(tCO2)", "required": true}, {"type": "double",
+    "name": "Lagging_Current_Power_Factor", "required": true}, {"type": "double",
+    "name": "Leading_Current_Power_Factor", "required": true}, {"type": "long", "name":
+    "NSM", "required": true}, {"type": "string", "name": "WeekStatus", "required":
+    true}, {"type": "string", "name": "Day_of_week", "required": true}, {"type": "string",
+    "name": "Load_Type", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-02-23 13:59:53.131839'
